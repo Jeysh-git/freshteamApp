@@ -7,101 +7,286 @@ $body-color: #e5e5e5;
 $leftnav-color :#12344d ;
 
 body {
-    background-color: $body-color ;
+   background-color: $body-color ;
+   max-width: 1500px;
+   min-height: 773px;
+   margin: 0 auto;
+}
+
+*{
+   box-sizing:border-box;
+   // position:absolute;
+}
+
+.container1{
+   background-color:#e5e5e5;
+   height:400px;
+   // width:10px;
+   // margin-left:60px;
+   margin-top:60px;
+}
+
+.cards-container {
+   position:absolute;
+   display:flex;
+   margin-top:50px;
+   height:690px;
+   width:1385px;
+   // flex-direction: row;
+   // flex-wrap:wrap;
+   
+//   border: 10px solid yellow;
+  
+   justify-content:space-between;
+
+}
+
+.avatar-container{
+   position:absolute;
+   // border:5px solid;
+   height:80px;
+   width:80px;
+   // padding:50px;
+   margin-top:12px;
+   // margin-left:65px;
+   border-radius: 50px;
+}
+
+.card-container {
+   position: absolute;
+   width: 200px;
+   height: 230px;
+   margin-top:80px;
+   // margin-left:50px;
+   // margin-right:150px;
+   // padding-right:150px;
+   
+   background: #FFFFFF;
+   border-radius: 2px;
+   align-self:space-between;
+   // align-self: center;   // border:5px solid;
+}
+
+.employee-initial{
+   position: absolute;
+   width: 30px;
+   height: 53px;
+   //left: 170px;
+   padding-top:15px;
+   font-family: 'SF Pro Text';
+   font-style: normal;
+   font-weight: 400;
+   font-size: 44px;
+   line-height: 53px;
+   color: #FFFFFF;
+}
+
+.namebox {
+   position: absolute;
+width: 137px;
+height: 18px;
+// left: 500px;
+top: 140px;
+
+/* 14px/Semi Bold */
+
+font-family: 'SF Pro Text';
+font-style: normal;
+font-weight: 600;
+font-size: 14px;
+line-height: 18px;
+/* identical to box height, or 129% */
+
+
+/* S900 */
+
+color: #27313A;
+}
+
+.emailbox {
+   position: absolute;
+width: 171px;
+height: 20px;
+// left: 1060px;
+top: 160px;
+
+font-family: 'SF Pro Text';
+font-style: normal;
+font-weight: 400;
+font-size: 12px;
+line-height: 20px;
+/* identical to box height, or 167% */
+
+text-align: center;
+letter-spacing: 0.07px;
+
+/* S600 */
+
+color: #576C7D;
+}
+
+.employee-image {
+   
+}
+
+.sub-header {
+   position: absolute;
+   left: 0%;
+   right:0%;
+   top: 6.5%;
+   width:1500px;
+   height:54px;
+   background-color:#F5F7F9;
+   margin-left:60px;
+   display:flex;
+   justify-content: flex-start;
+}
+
+.subheader-text {
+   width: 75px;
+   height: 18px;
+   position: absolute;
+   height: 17px;
+   left: 2.7%;
+   right: 0%;
+   top: 15px;
+   font-family: 'SF Pro Text';
+   font-style: normal;
+   font-weight: 600;
+   font-size: 15px;
+   line-height: 18px;
+   color: #12344D;
+   flex: none;
+   order: 0;
+   flex-grow: 0;
+}
+
+.button {
+   position: absolute;
+   height: 30px;
+   width:30px;
+   left: 25%;
+   right: 28.33%;
+   top: 65px;
+   border-radius: 4px;
+   background: #fff;
+}
+
+.button.active {
+   background: #7052CC;;
+}
+
+.count-text {
+   width: 125px;
+   height: 18px;
+   position: absolute;
+   height: 17px;
+   left: 55.7%;
+   right: 0%;
+   top: 15px;
+   font-family: 'SF Pro Text';
+   font-style: normal;
+   font-weight: 600;
+   font-size: 14px;
+   line-height: 18px;
+   color: #12344D;
+   flex: none;
+   order: 0;
+   flex-grow: 0;
 }
 
 .navbar-left {
-    height: 820px;
-    width: 60px;
-    position: absolute;
-    z-index: 1;
-    top: 0;
-    left: 0;
-    right:0;
-    bottom:0;
-    background-color: $leftnav-color;
-    overflow: auto;
+   height: 820px;
+   width: 60px;
+   position: absolute;
+   z-index: 1;
+   top: 0;
+   left: 0;
+   right:0;
+   bottom:0;
+   background-color: $leftnav-color;
+   overflow: auto;
  }
 
  .leftbar-logo {
-    position: absolute;
-    height: 52px;
-    left: 0%;
-    right: 0%;
-    top: 0px;
-    width:60px;
-    background: $leftnav-color;
-    box-shadow: 0px 1px 0px #41637C, 0px 2px 0px #27303E;
+   position: absolute;
+   height: 52px;
+   left: 0%;
+   right: 0%;
+   top: 0px;
+   width:60px;
+   background: $leftnav-color;
+   box-shadow: 0px 1px 0px #41637C, 0px 2px 0px #27303E;
  }
 
  .logoimg {
-    position: absolute;
-    left: 30%;
-    right: 28.33%;
-    top: 14px;
-    opacity: 0.5;
+   position: absolute;
+   left: 30%;
+   right: 28.33%;
+   top: 14px;
+   opacity: 0.5;
  }
 
  .header{
-    position: absolute;
-    left: 0%;
-    right: 0%;
-    top: 0%;
-    bottom: 0%;
-    width:1380px;
-    height:54px;
-    background-color: #ffffff;
-    margin-left:60px;
-    display:flex;
-    justify-content: flex-start;
+   position: absolute;
+   left: 0%;
+   right: 0%;
+   top: 0%;
+   bottom: 0%;
+   width:1500px;
+   height:54px;
+   background-color: #ffffff;
+   margin-left:60px;
+   display:flex;
+   justify-content: flex-start;
  }
 
  .headerimg{
-    position: absolute;
-    background: #FFFFFF;
-    width:34px;
-    height:34px;
-    top:8.5px;
-    left:34.63px;
+   position: absolute;
+   background: #FFFFFF;
+   width:34px;
+   height:34px;
+   top:8.5px;
+   left:34.63px;
  }
 
  .header-text{
-    position: absolute;
-    height: 17px;
-    left: 6.3%;
-    right: 0%;
-    top: 15px;
-    font-family: $header-font;
-    font-style: normal;
-    font-weight: 400;
-    font-size: 18px;
-    line-height: 16px;
-    color: #41637C;
+   position: absolute;
+   height: 17px;
+   left: 6.3%;
+   right: 0%;
+   top: 15px;
+   font-family: $header-font;
+   font-style: normal;
+   font-weight: 400;
+   font-size: 18px;
+   line-height: 16px;
+   color: #41637C;
  }
 
  .footer {
-    box-sizing: border-box;
-    position: absolute;
-    width: 1380px;
-    height: 20px;
-    left: 60px;
-    top: 800px;
-    bottom:0%;
-    background: #F5F7F9;
-    border: 1px solid #CFD7DF;
+   box-sizing: border-box;
+   position: absolute;
+   width: 1500px;
+   height: 20px;
+   left: 60px;
+   top: 800px;
+   bottom:0%;
+   background-color: #F5F7F9;
+   border: 1px solid #CFD7DF;
  }
 
  .footer-text{
-    width:280px;
-    height:16px;
-    left:530px;
-    position: absolute;
-    font-family: $footer-font;
-    font-style: normal;
-    font-weight: 400;
-    font-size: 12px;
-    line-height: 16px;
-    color: #607787;
-    position: absolute;
+   width:280px;
+   height:16px;
+   left:530px;
+   position: absolute;
+   font-family: $footer-font;
+   font-style: normal;
+   font-weight: 400;
+   font-size: 12px;
+   line-height: 16px;
+   color: #607787;
+   position: absolute;
  }
  
